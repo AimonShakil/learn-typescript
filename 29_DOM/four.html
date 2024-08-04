@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Fourth</title>
+</head>
+<body style=" background-color: #121212; color:aliceblue">
+    <ul class = "language"> 
+        <li>TypesScript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage (langName) { // we want to design this function so that we can add li through any P language
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("python")
+    addLanguage("TypeScript")
+
+// writing in a optimized way forcomplex projects
+
+    function addoptiLanguage (langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li) // here we did't have a reference
+    }
+    addoptiLanguage('golang')
+
+    //Edit
+   const secLang = document.querySelector("li:nth-child(2)")
+   const newLi = document.createElement('li')
+   newLi.textContent = "Mojo"
+   secLang.replaceWith(newLi)
+
+   //edit 2nd way 
+
+   const firstLang = document.querySelector("li:nth-child(1)")
+   firstLang.outerHTML = '<li>TypeScript</li>'
+
+   //remove
+
+   const lastLang =document.querySelector("li:last-child") // go reference
+    lastLang.remove()
+
+
+</script>
+
+
+
+
+</html>

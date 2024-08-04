@@ -1,0 +1,15 @@
+{
+  "name": "00b_syntax_errors",
+  "version": "1.0.0",
+  "description": "Syntax Error\r \ttsc app.ts\r The Output:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.11"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "03d_chalk",
+  "version": "1.0.0",
+  "type" : "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "The latest version of Inquirer(9+) and Chalk(5+) have started using Native ECMA Script Packages.",
+  "devDependencies": {
+    "@types/node": "^20.14.11"
+  },
+  "dependencies": {
+    "undici-types": "^5.26.5"
+  }
+}

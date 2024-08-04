@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head> 
+
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing Images</h2>
+    <ul id="images">
+        <li>
+            <img width="200px" id="owl" src="./../29_DOM/kevin-chin-u-EtfvMB7JM-unsplash.jpg" alt="Photo">
+        </li>
+        <li>
+            <a style="color:bisque; font-size: x-large;"   href="http://www.google.com">Google</a>
+        </li>
+    </ul>
+    
+</body>
+
+<script>
+
+    document.getElementById('images').addEventListener('click', function(e) {
+        console.log("clicked inside the Ul");
+    },false)
+    document.getElementById('owl').addEventListener('click', function(e) {
+        console.log("Owl Clicked");
+        e.stopPropagation()
+    }, false)
+
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault();
+        console.log("google Clicked");
+    }, false)
+
+
+
+
+    //type, timestamps, default prevented
+    // target, toElement , srcElement , currentTarget
+    // Interview related clientX or ClientY, screenX , screenY , offset
+    // alt Key, contrlKey , shift key, Keycode (that Pressed or not can see therough event )
+
+    //attachevent method
+</script>
+</html>
