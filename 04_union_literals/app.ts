@@ -115,7 +115,7 @@ type Final_Data = Raw_data | Boolean | undefined;
 //UNION TYPES WITH CUSTOM DERIVED DATA TYPES:
 /*Defining Type / Assigning Multiple Types by creating custom Type, One VAriable can have two types */
 
-type Type1 = string |number;
+type Type1 = string | number;
 type Type2 = Boolean | null;
 type Type3 = Type1| Type2
 
@@ -131,7 +131,7 @@ seatAllotment = "aisle"
 // seatAllotment = "crewseat" // ERROR 
 
 //
-type  User = {
+type User = {
     name: string;
     id : number
 }
@@ -175,7 +175,7 @@ call1("102");
 const data : number[] = [ 1, 2 ,3 ,4]
 const data1 : string[] = [ "1", "2" ,"3" ,"4"]
 
-const data2 : string[] | number []=  [2, 3, 4, ] // cant be mix can be either of type number or Array
+const data2 : string[] | number []=  [2, 3, 4] // cant be mix can be either of type number or Array
 
 const data3 : string | number []=  "dd" // either one type
 
